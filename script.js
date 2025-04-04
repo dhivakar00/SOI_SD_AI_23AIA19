@@ -10,14 +10,14 @@ console.log(uniquearr);
 ////////
 
 let str = "racecar";
-let isPalindrome = str === str.split('').reverse(.join(''));
+let isPalindrome = str === (str.split('').reverse().join(''));
 console.log(isPalindrome);
 
 /////////
 
 let input= "hi hello";
 let capitalized = input
-  . split(' ')
-  .map(word =>word.charAt(0),toUpperCase() + word.slice(1))
+  .split(' ')
+  .map(word =>word.charAt(0).toUpperCase() + word.slice(1))
   .join(' ');
   console.log(capitalized);
